@@ -1,0 +1,432 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f0;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* COLORS */
+
+.logo span,
+.tag,
+h1 span,
+.contact h2 span {
+    color: #1463ff;
+}
+
+
+/* BUTTON */
+
+.main-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 22px;
+    background: #1463ff;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.main-button:hover {
+    background: #111;
+    transform: translateY(-3px);
+}
+
+
+/* INDEX */
+
+.cover-page {
+    min-height: 100vh;
+    background: #ffd928;
+    padding: 30px;
+}
+
+.cover {
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: auto;
+    padding: 30px 7%;
+    background: #f5f5f0;
+    border-radius: 20px;
+}
+
+.cover-nav,
+.cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cover-nav p,
+.cover-footer {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.cover-content {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.cover-text h1 {
+    margin-top: 15px;
+    font-size: clamp(60px, 8vw, 110px);
+    line-height: .85;
+}
+
+.cover-text p:not(.tag) {
+    max-width: 400px;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.cover-image,
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cover-image img {
+    width: 330px;
+    height: 440px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.circle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #ffd928;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #1463ff;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    background: #ffd928;
+}
+
+.hero-text h1 {
+    margin: 15px 0;
+    font-size: clamp(60px, 9vw, 110px);
+    line-height: .85;
+}
+
+.hero-text p:not(.tag) {
+    max-width: 450px;
+    line-height: 1.7;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 15px 15px #1463ff;
+}
+
+.hero-image .circle {
+    background: white;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 100px 10%;
+}
+
+.section h2 {
+    margin-top: 15px;
+    font-size: 50px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-box {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.about-box div {
+    padding: 30px;
+    background: #f5f5f0;
+    border-left: 6px solid #1463ff;
+}
+
+.about-box h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.about-box p {
+    line-height: 1.6;
+}
+
+
+/* EDUCATION */
+
+.education {
+    background: #111;
+    color: white;
+}
+
+.education-layout {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.school-card {
+    padding: 35px;
+    background: #222;
+    border-radius: 12px;
+}
+
+.school-number {
+    font-size: 35px;
+    color: #ffd928;
+    font-weight: bold;
+}
+
+.school-card h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.school-card p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.school-card span {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffd928;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* FAVORITES */
+
+.favorites {
+    background: #f5f5f0;
+}
+
+.favorite-layout {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.favorite-card {
+    padding: 40px;
+    background: #ffd928;
+    border-radius: 15px;
+}
+
+.favorite-card:last-child {
+    background: #1463ff;
+    color: white;
+}
+
+.favorite-card span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.favorite-card h3 {
+    margin: 40px 0 15px;
+    font-size: 28px;
+}
+
+.favorite-card p {
+    line-height: 1.6;
+}
+
+
+/* CONTACT */
+
+.contact {
+    min-height: 60vh;
+    padding: 100px 10%;
+    text-align: center;
+    background: #1463ff;
+    color: white;
+}
+
+.contact .tag {
+    color: #ffd928;
+}
+
+.contact h2 {
+    margin-top: 20px;
+    font-size: clamp(55px, 8vw, 100px);
+}
+
+.contact h2 span {
+    color: #ffd928;
+}
+
+.contact .main-button {
+    background: #ffd928;
+    color: #111;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    background: #111;
+    color: white;
+    font-size: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .cover-content,
+    .hero,
+    .about-box,
+    .education-layout,
+    .favorite-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cover-content {
+        padding: 50px 0;
+    }
+
+    .cover-image {
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text p:not(.tag) {
+        margin: auto;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .section {
+        padding: 70px 8%;
+    }
+
+    footer,
+    .cover-footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
